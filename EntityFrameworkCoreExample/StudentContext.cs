@@ -27,6 +27,9 @@ namespace EntityFrameworkCoreExample
             options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=EFCoreExample;Trusted_Connection=True;");
         }
 
+        // Database Creation Information:
+        // https://docs.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=visual-studio#create-the-database
+
         // Tell EF Core to track Students in the database
         public DbSet<Student> Students { get; set; }
     }
